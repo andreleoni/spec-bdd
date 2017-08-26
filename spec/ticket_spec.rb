@@ -1,11 +1,12 @@
 require 'rspec'
 require 'date'
-require_relative '../app/passport.rb'
+require_relative '../app/**.rb'
 
-RSpec.describe Passport  do
+RSpec.describe Ticket  do
   context 'SENDO usuário logado, 
            DEVO poder criar uma passagem 
            PARA que o sistema faça a compra com a companhia aérea' do   
+
     it 'DADO QUE eu tenha um usuário cadastrado no sistema com permissões de administrador 
         QUANDO colocar as informações de usuário e senha 
         ENTÃO entrará na tela de permissões administrativas.' do
@@ -18,8 +19,8 @@ RSpec.describe Passport  do
   end
 end
 
-RSpec.describe Payment do
-end
+# RSpec.describe Payment do
+# end
 
-RSpec.describe Advertisement do
-end
+# RSpec.describe Advertisement do
+# end
