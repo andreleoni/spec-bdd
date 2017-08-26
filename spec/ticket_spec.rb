@@ -9,9 +9,7 @@ RSpec.describe Ticket  do
     it 'Deve receber mensagem de que a data é inválida' do
       # DADO QUE informo data de chegada inferior a data de partida,
       # QUANDO clico em comprar passagem
-      # ENTÃO recebo mensagem de que a data é inválida.
-             
-      expect(Ticket.create(DateTime.parse('28/08/2017'), DateTime.parse('26/08/2017'))).to eql("Data de chegada nao pode ser menor que data de saída")
+      # ENTÃO recebo mensagem de que a data é inválida.             
     end       
   end
 
@@ -20,6 +18,9 @@ RSpec.describe Ticket  do
            PARA QUE o ticket fique reservado na aplicação e na companhia até a confirmação de pagamento" do
 
     it 'Deve avisar a companhia para reservar uma passagem' do
+      # DADO QUE o ticket foi cadastrado,
+      # QUANDO ele gerar o boleto de pagamento,
+      # ENTÃO reservo a passagem com a companhia aerea.
     end
   end
 end
