@@ -1,4 +1,4 @@
-require 'date'
+require_relative './app_helper.rb'
 
 class Ticket
   def self.create(date_from, date_to)
